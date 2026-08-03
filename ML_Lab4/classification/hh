@@ -1,0 +1,2 @@
+import pandas as pd
+print(pd.read_csv(r"D:\work\myW\ML_Lab4\data-F1\F1Drivers_Dataset.csv").columns.tolist())
