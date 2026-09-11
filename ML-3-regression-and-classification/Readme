@@ -1,0 +1,27 @@
+คำเตือน: Repository นี้สร้างขึ้นเพื่อสนองวิชา Machine Learning เท่านั้น หากนำไปใช้ทายอายุแฟนแล้วเกิดการเลิกรากัน ทางผู้พัฒนาจะไม่รับผิดชอบใดๆ ทั้งสิ้น 💀
+ยินดีต้อนรับสู่โปรเจกต์ Supervised Learning ระดับเทพ (ซ่า) ที่จะพาคุณไปพบกับการทำนาย อายุ (Regression) และ เพศ (Classification) จากภาพถ่ายใบหน้า ด้วยขุมพลังของ Python, PCA และ Linear Models ที่สุ่มตัวเลขออกมาเหมือนตาเห็น!
+โปรเจกต์นี้ทำอะไรได้บ้าง?
+Age Prediction (Regression): ส่องหน้าแล้วทายอายุ ด้วย StandardScaler -> PCA -> Ridge (เอาไว้ดูว่าหน้าคุณแก่แซงอายุจริงไปกี่ปี)
+Gender Prediction (Classification): ส่องหน้าแล้วจำแนกเพศ ด้วย LogisticRegression (แม่นยำประมาณ 84% ส่วนอีก 16% ที่เหลือ... ก็ถือว่าโมเดลมันมีจินตนาการ)
+Dimensionality Reduction: ใช้ PCA บีบอัดพิกเซลภาพอันมหาศาล เพื่อให้คอมพิวเตอร์ไม่ต้องร้องไห้ตอนเทรน
+
+
+## 📁 โครงสร้างโปรเจกต์ (จัดระเบียบดีจนอาจารย์ต้องน้ำตาไหล)
+ML-3-regression-and-classification/
+├── age_gender.csv            # Dataset ตัวเด็ดจาก Kaggle (อย่าลืมโหลดมาวาง!)
+├── data_loader.py            # สคริปต์แบกรับภาระแปลง String เป็น Array
+├── main.py                   # ปุ่มแดงรันโลก
+├── others_dir/
+│   ├── pixels.npy            # Binary Data ปริศนาที่มนุษย์เปิดดูไม่ได้
+│   └── meta.csv              # ข้อมูลกำกับไว้กันหลง
+├── regression/
+│   ├── main.py
+│   ├── model.py              # StandardScaler -> PCA -> Ridge
+│   ├── evaluate.py           # ตัวคำนวณ MAE, RMSE, R² และตัววาดกราฟ
+│   └── outputs/              # ที่เก็บรูปกราฟเอาไปส่งอาจารย์
+├── classification/
+│   ├── main.py
+│   ├── model.py              # StandardScaler -> PCA -> LogisticRegression
+│   ├── evaluate.py           # ตัวทำ Confusion Matrix
+│   └── outputs/              # ที่เก็บ Confusion Matrix สุดเท่
+└── requirements.txt          # รายชื่อคาถาอาคมที่ต้องลง
