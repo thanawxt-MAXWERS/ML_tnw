@@ -6,7 +6,7 @@ Gender Prediction (Classification): ส่องหน้าแล้วจำ�
 Dimensionality Reduction: ใช้ PCA บีบอัดพิกเซลภาพอันมหาศาล เพื่อให้คอมพิวเตอร์ไม่ต้องร้องไห้ตอนเทรน
 
 
-#📁 โครงสร้างโปรเจกต์ (จัดระเบียบดีจนอาจารย์ต้องน้ำตาไหล)
+# 📁 โครงสร้างโปรเจกต์ (จัดระเบียบดีจนอาจารย์ต้องน้ำตาไหล)
 ML-3-regression-and-classification/
 ├── age_gender.csv            # Dataset ตัวเด็ดจาก Kaggle (อย่าลืมโหลดมาวาง!)
 ├── data_loader.py            # สคริปต์แบกรับภาระแปลง String เป็น Array
