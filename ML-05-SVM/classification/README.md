@@ -1,28 +1,31 @@
 ## Structure
-text
+
+```text
 ML-05-SVM/
 │
-├── PetImages/
-│   ├── Cat/
-│   │   ├── 0.jpg
-│   │   ├── 1.jpg
-│   │   └── ...
-│   │
-│   └── Dog/
-│       ├── 0.jpg
-│       ├── 1.jpg
-│       └── ...
-│
 ├── classification/
+│   ├── Rock Paper Scissors/
+│   │   └── Rock Paper Scissors/
+│   │       ├── paper/
+│   │       │   ├── 0.jpg 
+│   │       │   └── ...
+│   │       ├── rock/
+│   │       │   ├── 0.jpg
+│   │       │   └── ...
+│   │       └── scissors/
+│   │           ├── 0.jpg
+│   │           └── ...
+│   │
 │   ├── main.py
 │   ├── test_svm.py
-│   ├── data_loader.py
-│   ├── preprocessing.py
+│   ├── data_load.py
+│   ├── preprocess.py
 │   ├── split_data.py
 │   ├── svm_model.py
 │   ├── evaluate.py
+│   ├── draw_flow.py
 │   └── outputs/
-│       ├── features.npy
+│       ├── images.npy
 │       ├── labels.npy
 │       ├── classes.json
 │       ├── X_train.npy
@@ -31,8 +34,8 @@ ML-05-SVM/
 │       ├── y_test.npy
 │       ├── scaler.pkl
 │       ├── svm_model.pkl
-│       └── confusion_matrix.png
+│       ├── confusion_matrix.png
+│       └── prediction_samples.png
 │
 ├── requirements.txt
 └── link-data.txt
-'''
