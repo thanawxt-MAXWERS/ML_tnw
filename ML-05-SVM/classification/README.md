@@ -1,7 +1,38 @@
-## 
-=======
-ยังไม่เสร็จ ทวงครั้งที่1
-
-<img width="608" height="960" alt="8430f36d8db8afff679c17ceb7bcc42e" src="https://github.com/user-attachments/assets/3080c142-8883-4825-984a-45e902d67e5c" />
-
->>>>>>> aaaaa98786276b2bd7798070b90bc90241ea1a51
+#Structure
+'''text
+ML-05-SVM/
+│
+├── PetImages/
+│   ├── Cat/
+│   │   ├── 0.jpg
+│   │   ├── 1.jpg
+│   │   └── ...
+│   │
+│   └── Dog/
+│       ├── 0.jpg
+│       ├── 1.jpg
+│       └── ...
+│
+├── classification/
+│   ├── main.py
+│   ├── test_svm.py
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── split_data.py
+│   ├── svm_model.py
+│   ├── evaluate.py
+│   └── outputs/
+│       ├── features.npy
+│       ├── labels.npy
+│       ├── classes.json
+│       ├── X_train.npy
+│       ├── X_test.npy
+│       ├── y_train.npy
+│       ├── y_test.npy
+│       ├── scaler.pkl
+│       ├── svm_model.pkl
+│       └── confusion_matrix.png
+│
+├── requirements.txt
+└── link-data.txt
+'''
